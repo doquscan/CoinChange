@@ -1,5 +1,9 @@
 --liquibase formatted sql
 
+--changeset doguscan:create-database
+--CREATE DATABASE coin_change;
+--GRANT ALL PRIVILEGES ON my_database.* TO 'username'@'localhost' IDENTIFIED BY 'password';
+
 --changeset liquibase-docs:sql-1
 CREATE TABLE coin_inventory (
                                 id BIGINT AUTO_INCREMENT PRIMARY KEY,
