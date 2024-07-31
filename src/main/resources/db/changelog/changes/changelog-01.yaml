@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: doguscan sozeri
+      changes:
+        - createTable:
+            tableName: coin_inventory
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: denomination
+                  type: VARCHAR(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: quantity
+                  type: INT
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 2
+      author: doguscan sozeri
+      changes:
+        - insert:
+            tableName: coin_inventory
+            columns:
+              - column:
+                  name: denomination
+                  value: PENNY
+              - column:
+                  name: quantity
+                  valueNumeric: 100
+        - insert:
+            tableName: coin_inventory
+            columns:
+              - column:
+                  name: denomination
+                  value: NICKEL
+              - column:
+                  name: quantity
+                  valueNumeric: 100
+        - insert:
+            tableName: coin_inventory
+            columns:
+              - column:
+                  name: denomination
+                  value: DIME
+              - column:
+                  name: quantity
+                  valueNumeric: 100
+        - insert:
+            tableName: coin_inventory
+            columns:
+              - column:
+                  name: denomination
+                  value: QUARTER
+              - column:
+                  name: quantity
+                  valueNumeric: 100

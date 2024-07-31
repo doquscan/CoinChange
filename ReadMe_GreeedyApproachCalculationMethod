@@ -1,0 +1,5 @@
+Inline :
+Initialization Section: Please see the comments explaining the initialization of the change map and remainingAmount.
+Coin Inventory Mapping: Description of mapping the coin denominations to their respective quantities.
+Main Logic Loop: Describes the iteration over each denomination, checking availability, and calculating the required change.
+Final Check and Exception: Notes the check for remaining amounts and the condition under which an exception is thrown.

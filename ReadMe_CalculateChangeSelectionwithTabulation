@@ -1,0 +1,15 @@
+Detailed Overview:
+Class-Level :
+This provides a general explanation of the approach taken by the method, including the complexity and the key aspects of
+ he implementation.
+Method-Level :
+The method description includes details on the dynamic programming approach, specifically mentioning the use of tabulation
+ (bottom-up method). It explains the time and space complexity, which is crucial for understanding the efficiency of the algorithm.
+Parameter Descriptions:
+Each parameter (amount, coins, denominations) is explained, giving insight into their roles in the method.
+Exception Handling:
+The throws clause in the JavaDoc specifies the InsufficientCoinsException, which provides clarity on when and why this
+ exception might be thrown.
+Detailed Inline :
+Inline comments within the method provide a step-by-step explanation of the logic, including the initialization of the
+ buttomUp array, the role of the coinInventory map, the update mechanism for buttomUp and coinCount, and the final backtracking step.
